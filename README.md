@@ -1,2 +1,2 @@
-# Database-Python
-I created simple DataBase for Windows
+Open command plate and write this:
+pip install keyboard
