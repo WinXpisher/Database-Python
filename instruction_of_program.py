@@ -6,7 +6,7 @@ class Instruction_main():
     def __init__(self):
         self.instructWindow = Tk()
         self.instructWindow.geometry(f'300x400+400+200')
-        self.instructWindow.title('Instruction to program')
+        self.instructWindow.title('Instruction of program')
         self.instructWindow.resizable(False, False)
         self.text(self.instructWindow)
 
