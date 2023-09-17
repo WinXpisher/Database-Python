@@ -4,7 +4,7 @@ from tkinter import messagebox
 import keyboard
 import sqlite3
 import os.path
-from instruction_prog import Instruction_main
+from instruction_of_program import Instruction_main
 
 class Main():
     def __init__(self):
