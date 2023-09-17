@@ -7,6 +7,7 @@ import os.path
 from instruction_of_program import Instruction_main
 
 class Main():
+    #Setting size and name
     def __init__(self):
         self.window = Tk()
         w = int((self.window.winfo_screenwidth()) / 2)
@@ -127,19 +128,17 @@ class Main():
     #logic download data into sqllite3
     def upload(self):
         data = []
-
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         db_path = os.path.join(BASE_DIR, "Database.sqlite")
         with sqlite3.connect(db_path) as db:
             cur = db.cursor()
             for row in cur.execute("SELECT * FROM albums"):
                 self.tree.insert('', END, values = row)
-
+    #run function
     def run(self):
-        
         self.upload()
         self.window.mainloop()
-
+#run program
 if __name__ == '__main__':
     Instruction_main().run()
     Main().run()
